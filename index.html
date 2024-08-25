@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PICO - Object Detection</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <meta name="description" content="A comprehensive tutorial on how to create an improved Viola Jones object detector.">
+  <meta name="keywords" content="coding tutorials, programming, Viola Jones, object detection, sliding window detection, cascade, boosted trees, trees, boosting">
+</head>
+<body>
+
+<div class="focus">
+    <h1 style="margin-bottom: 0px;">
+        Let's Create An Ultra Fast Object Detector
+    </h1>
+    <h2 style="margin-top: 0px;">
+        A step by step tutorial
+    </h2>
+
+    <a href="https://github.com/dajuric/pico-objectdetector" class="button-with-image">
+        <img src="content/github.png" alt="GitHub Icon">
+        View Project on GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/darko-juric/" class="button-with-image">
+        <img src="content/linkedin.webp" alt="LinkedIn Icon">
+        About the author
+    </a>
+
+    <div style="display: grid;">
+        <div id="accept">
+            <button id="runDemo" class="button-with-image">
+                <img src="content/camera.png" alt="Camera Icon">
+                Run the Demo!
+            </button>
+            <p>
+                <b>Show you hand towards the camera (upward)</b> <i>in order to be detected.</i><br/>
+                <i>The camera feed is processed on your PC/Phone. No data is transmitted.</i>
+            </p>
+        </div>
+
+        <div id="canvasContainer" class="disabled-div">
+            <canvas id="preview"></canvas>
+            <div id="fps">FPS: 0</div>
+            <button id="flipButton">Flip Horizontal</button>
+        </div>
+    </div>
+
+    
+    <hr/>
+</div>
+
+<div class="focus">
+    <div class="focus-description">
+        <p>
+            Through this series of articles we will build an object detector (Viola Jones like) capable of detecting faces.
+        </p>
+
+        This tutorial is created to introduce a concept of Viola Jones like object detector, but in step by step manner. The series has the following characteristics:
+        <ol>
+            <li>A moderate knowledge of Python is assumed.</li>
+            <li>Concepts are introduced gradually and with samples.</li>
+            <li>A production ready training application is already done for you. </li>
+            <li>A JavaScript demo is already done so you can try it.</li>
+        </ol>
+    </div>
+</div>
+
+ <div class="module">
+    <h2 class="module-title">Tutorial</h2>
+    <p class="module-description">
+        A tutorial in Python on how to create a Viola Jones like detector from scratch (evaluation and training).
+    </p>
+
+    <div class="grid">
+        <div class="card">
+            <a href="https://medium.com/@darko-juric/from-a-tree-stump-to-an-object-detection-1-4-tree-stumps-3a9e6a25c857">
+                <img src="content/m1.jpg" alt="Post">
+                <h2 class="card-title">Tree Stumps</h2>
+                <p class="card-description">A simple classifier: tree stump.</p>
+            </a>   
+        </div>
+        
+        <div class="card">
+            <a href="https://medium.com/@darko-juric/from-a-tree-stump-to-an-object-detection-2-4-trees-fe86f98d43dd">
+                <img src="content/m2.jpg" alt="Post">
+                <h2 class="card-title">Trees</h2>
+                <p class="card-description">An extension of a tree stump classifier to a tree classifer.</p>
+            </a>   
+        </div>     
+
+        <div class="card">
+            <a href="https://medium.com/@darko-juric/from-a-tree-stump-to-an-object-detection-3-4-boosted-trees-b4c2f8f47e31">
+                <img src="content/m3.jpg" alt="Post">
+                <h2 class="card-title">Boosted Trees</h2>
+                <p class="card-description">Boosting a tree classifier by having multiple tree classifiers.</p>
+            </a>   
+        </div>    
+        
+        <div class="card">
+            <a href="https://medium.com/@darko-juric/from-a-tree-stump-to-an-object-detection-4a-4b-object-detection-runtime-f64578118a71">
+                <img src="content/m4.1.jpg" alt="Post">
+                <h2 class="card-title">Object Detection - Runtime</h2>
+                <p class="card-description">Cascade and sliding window: evaluation.</p>
+            </a>   
+        </div>   
+        
+        <div class="card">
+            <a href="https://medium.com/@darko-juric/from-a-tree-stump-to-an-object-detection-4b-4b-object-detection-training-7f338888b068">
+                <img src="content/m4.2.jpg" alt="Post">
+                <h2 class="card-title">Object Detection - Training</h2>
+                <p class="card-description">Creating training for a cascade bosted tree classifier.</p>
+            </a>   
+        </div>     
+    </div>
+  </div>
+  <hr/>
+
+  <div class="module">
+    <h2 class="module-title">Real World Apps</h2>
+    <p class="module-description">
+        A JavaScript demo and a full fledged C++ (parallel) implementation of cascade (detector) training.
+    </p>
+    
+    <div class="grid">
+        <div class="card">
+            <a href="https://medium.com/@darko-juric/object-detection-in-javascript-100-fps-120-lines-of-code-d34d22c584ee">
+              <img src="content/js-app.jpg" alt="Post">
+              <h2 class="card-title">Object Detection in JavaScript: 100 FPS, 120 lines of code</h2>
+              <p class="card-description">A step by step explanation on how to create an ultra fast object detection in JavaScript. (100+ FPS, in less than 120 lines of code)</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://medium.com/@darko-juric/object-detection-training-an-improved-viola-jones-225b0dd983d7">
+              <img src="content/c++app.jpg" alt="Post">
+              <h2 class="card-title">Train Your Ultra Fast Object Detector: An App Tutorial</h2>
+              <p class="card-description">A step by step explanation on how to train your own object detector.</p>
+            </a>
+        </div>
+    </div>
+  </div>
+
+
+<footer>
+  <p>&copy; 2024 Darko Jurić. All rights reserved.</p>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Let's Create An Ultra Fast Object Detector",
+      "description": "A step by step tutorial on tree like classifiers: tree stumps, trees, boosted trees and finally cascade like classifier.",
+      "author": {
+        "@type": "Person",
+        "name": "Darko Jurić"
+      },
+      "datePublished": "2024-08-31",
+      "publisher": {
+        "@type": "Person",
+        "name": "PICO - Object Detection"
+      }
+    }
+    </script>
+
+    <script src="src/detector/cascade.js"></script>
+    <script src="src/detector/image.js"></script>
+    <script src="src/detector/detector.js"></script>
+    <script src="src/util/camera.js"></script>
+	<script src="src/util/drawing.js"></script>
+    <script src="src/demo.js"></script>
+</footer>
+
+</body>
+</html>
