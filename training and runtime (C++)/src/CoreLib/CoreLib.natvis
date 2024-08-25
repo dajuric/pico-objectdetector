@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+	<Type Name="System::String">
+		<DisplayString>{{ Length={length}, {data} }}</DisplayString>
+		<Expand>
+			<Item Name="Data">data</Item>
+			<Item Name="Length">length</Item>
+		</Expand>
+	</Type>
+
+	<Type Name="System::UPtr&lt;*&gt;">
+		<DisplayString>{{ {*ptr} }}</DisplayString>
+		<Expand>
+			<Item Name="Data">*ptr</Item>
+		</Expand>
+	</Type>
+	
+	<Type Name="System::SPtr&lt;*&gt;">
+		<DisplayString>{{ RefCnt={*cPtr}, {*ptr} }}</DisplayString>
+		<Expand>
+			<Item Name="Data">*ptr</Item>
+			<Item Name="RefCnt">*cPtr</Item>
+		</Expand>
+	</Type>
+
+	<Type Name="System::Collections::Generic::Array&lt;*&gt;">
+		<DisplayString>{{ Length={Length()} }}</DisplayString>
+		<Expand>
+			<Item Name="Length">length</Item>
+			<IndexListItems>
+				<Size>length</Size>
+				<ValueNode>(data[$i])</ValueNode>
+			</IndexListItems>
+		</Expand>
+	</Type>
+
+	<Type Name="System::Collections::Generic::List&lt;*&gt;">
+		<DisplayString>{{ Count={Count()} }}</DisplayString>
+		<Expand>
+			<Item Name="Count">length</Item>
+			<IndexListItems>
+				<Size>length</Size>
+				<ValueNode>(data[$i])</ValueNode>
+			</IndexListItems>
+		</Expand>
+	</Type>
+	
+</AutoVisualizer>

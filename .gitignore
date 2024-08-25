@@ -1,0 +1,10 @@
+#C++
+bin/
+scripts/*.obj
+
+#Python
+__pycache__
+
+#JavaScript
+**/.vscode/settings.json
+**/.vscode/localhost.*

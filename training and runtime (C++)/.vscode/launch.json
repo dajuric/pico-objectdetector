@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Linux 64",
+      "preLaunchTask": "${defaultBuildTask}",
+
+      "visualizerFile": "${workspaceFolder}/src/CoreLib/CoreLib.natvis",
+      "showDisplayString": true,
+      
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "${workspaceFolder}/bin/",
+      "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}.o",
+      "MIMode": "gdb",
+    }
+  ]
+}
