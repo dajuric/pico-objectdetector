@@ -1,0 +1,7 @@
+#pip and Python generated stuff
+dark.egg-info/
+build/
+__pycache__
+
+#binaries
+**/bin/**

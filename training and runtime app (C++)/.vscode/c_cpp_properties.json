@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux x64",
+            "includePath": [
+                "/usr/include/opencv4/",
+                "${workspaceFolder}/src/**",
+                "${workspaceFolder}/src/CoreLib/**"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "clang-x64",
+            "compilerArgs": [
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

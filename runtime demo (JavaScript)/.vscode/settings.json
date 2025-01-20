@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.https": {
+      "enable": true,
+      "cert": "C:/Users/Darko/Desktop/viola-jones-tutorial/ViolaJones-runtime (JavaScript)/.vscode/localhost.pem",
+      "key": "C:/Users/Darko/Desktop/viola-jones-tutorial/ViolaJones-runtime (JavaScript)/.vscode/localhost.key",
+      "passphrase": "0000"
+    }
+  }

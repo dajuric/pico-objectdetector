@@ -1,0 +1,66 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: build active file",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=c++20",
+                "-Wno-inline-new-delete",
+
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/bin/${fileBasenameNoExtension}.o",
+                "-I",
+                "/usr/include/opencv4/",
+                "-I",
+                "${workspaceFolder}/src/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/Extensions/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/System/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/System/CollectionsBase/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/System/Containers/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/System/SmartPointers/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/System.Collections/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/System.Compiler.CompilerServices/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/System.Diagnostics/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/System.IO/",
+                "-I",
+                "${workspaceFolder}/src/CoreLib/System.Threading/",
+                "-l",
+                "opencv_core",
+                "-l",
+                "opencv_imgcodecs",
+                "-l",
+                "opencv_highgui",
+                "-l",
+                "opencv_imgproc",
+                "-l",
+                "opencv_videoio"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+              },
+            "detail": ""
+        },
+    ],
+    "version": "2.0.0"
+}
