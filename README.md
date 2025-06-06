@@ -1,6 +1,7 @@
 # Let's Create An Ultra Fast Object Detector
 
-An improved and faster variant of a popular [Viola and Jones](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf) detection algorithm is implemented in C++ according to [this paper](https://arxiv.org/pdf/1305.4537.pdf).
+An improved and faster variant of a popular [Viola and Jones](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf) detection algorithm is implemented in JavaScript according to [this paper](https://arxiv.org/pdf/1305.4537.pdf).   
+*Training is implemmeted in C++ an the code is available in an associated repository.*   
 
 ![Samples](docs/samples.gif)
 
