@@ -1,11 +1,18 @@
 # Let's Create An Ultra Fast Object Detector
-A tutorial where we build an object detector (Viola Jones like) capable of detecting faces and other objects.
-It also contains an object detection demo written in pure JavaScript!
-Finally, there is an applciation for training your own detector.
 
-**All information is available on the repositories webpage.**
+An improved and faster variant of a popular [Viola and Jones](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf) detection algorithm is implemented in C++ according to [this paper](https://arxiv.org/pdf/1305.4537.pdf).
 
-## Conclusion
-I sincerly hope you will learn new things related tree classifiers and have fun along the way.
+![Samples](docs/samples.gif)
 
-If you are working on something interesting please do not hesitate to reach me out on [LinkedIn](https://www.linkedin.com/in/darko-juric/).
+This implementation introduces several enhancements compared to the classic Viola-Jones approach:
+1. Binary pixel comparisons replace Haar features — no need for integral images.   
+2. Full decision trees are used instead of simple decision stumps.   
+3. GentleBoost replaces AdaBoost for improved training stability and accuracy.   
+
+## 1) Running inside Browser
+The included demo runs entirely in JavaScript — under 120 lines of code — and achieves over 100 FPS, even on a smartphone.
+Don’t just take our word for it - in fact, test it for yourself.
+
+## 2) Tutorial
+A full, beginner-friendly tutorial is included, with step-by-step explanations.
+Accompanying articles are available on my personal website, guiding you through everything from the basics to advanced implementation details.
